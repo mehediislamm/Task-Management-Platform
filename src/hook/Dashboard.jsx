@@ -1,7 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { CgProfile } from "react-icons/cg";
 import { PiMegaphoneBold } from "react-icons/pi";
-import { FaHome, FaUsers, } from "react-icons/fa";
+import { FaHome,  } from "react-icons/fa";
 import { VscRequestChanges } from "react-icons/vsc";
 import { RiCoupon3Line } from "react-icons/ri";
  
@@ -32,14 +32,10 @@ const Dashboard = () => {
                                     <button className="disabled:cursor-not-allowed cursor-pointer hover:bg-black py-3 px-4 text-sm font-semibold rounded-full  transition flex items-center gap-3 w-full "> <CgProfile size={20} />  My Profile </button>
                                 </NavLink>
                             </li>
+
                             <li className="mb-3">
-                                <NavLink className="text-white " to="/dashboard/manageMember">
-                                    <button className="disabled:cursor-not-allowed cursor-pointer hover:bg-black py-3 px-4 text-sm font-semibold rounded-full  transition flex items-center gap-3 w-full"> <FaUsers size={20} />   Manage Members </button>
-                                </NavLink>
-                            </li>
-                            <li className="mb-3">
-                                <NavLink className="text-white " to="/dashboard/adminAnnouncement">
-                                    <button className="disabled:cursor-not-allowed cursor-pointer hover:bg-black py-3 px-4 text-sm font-semibold rounded-full  transition flex items-center gap-3 w-full"> <PiMegaphoneBold size={20} />Make Announcements </button>
+                                <NavLink className="text-white " to="/dashboard/addedtask">
+                                    <button className="disabled:cursor-not-allowed cursor-pointer hover:bg-black py-3 px-4 text-sm font-semibold rounded-full  transition flex items-center gap-3 w-full"> <PiMegaphoneBold size={20} />Added Task</button>
                                 </NavLink>
                             </li>
                             <li className="mb-3">
