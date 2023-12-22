@@ -4,6 +4,8 @@ import Error from "../page/Error/Error";
 import Home from "../page/Home/Home/Home";
 import Login from "../page/Login/Login";
 import Register from "../page/register/Register";
+import Dashboard from "../hook/Dashboard";
+import MyProfile from "../page/myprofile/MyProfile";
 
 
 
@@ -25,7 +27,26 @@ export const router = createBrowserRouter([
             path:'register',
             element:<Register></Register>
         },
+        
 
       ]
     },
+      {
+        path:'dashboard',
+        element:<Dashboard></Dashboard>,
+        children:[
+          {
+            path:'myProfile',
+            element:<MyProfile></MyProfile>
+          },
+          {
+            path:'dashboard',
+            element:<Dashboard></Dashboard>
+        },
+        {
+            path:'/dashboard/myProfile',
+            element:<MyProfile></MyProfile>
+        },
+        ]
+    }
   ]);
