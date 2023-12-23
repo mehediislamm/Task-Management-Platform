@@ -39,14 +39,14 @@ const Dashboard = () => {
                                 </NavLink>
                             </li>
                             <li className="mb-3">
-                                <NavLink className="text-white " to="/dashboard/agreementRequest">
-                                    <button className="disabled:cursor-not-allowed cursor-pointer hover:bg-black py-3 px-4 text-sm font-semibold rounded-full  transition flex items-center gap-3 w-full "> <VscRequestChanges size={20} />  Agreement Requests </button>
+                                <NavLink className="text-white " to="/dashboard/todolist">
+                                    <button className="disabled:cursor-not-allowed cursor-pointer hover:bg-black py-3 px-4 text-sm font-semibold rounded-full  transition flex items-center gap-3 w-full "> <VscRequestChanges size={20} />Todo List</button>
                                 </NavLink>
                             </li>
                             <li className="mb-3">
-                                <NavLink className="text-white " to="/dashboard/announcements">
+                                <NavLink className="text-white " to="/dashboard/deletetask">
                                     <button className="disabled:cursor-not-allowed cursor-pointer hover:bg-black py-3 px-4 text-sm font-semibold rounded-full  transition flex items-center gap-3 w-full ">  <RiCoupon3Line />
-                                        Manage Coupons </button>
+                                    Delete Task </button>
                                 </NavLink>
                             </li>
 

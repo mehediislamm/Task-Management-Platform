@@ -1,3 +1,4 @@
+// import swal from "sweetalert";
 import swal from "sweetalert";
 import useAxiosPublic from "../../hook/useAxiosPublic";
 
@@ -9,22 +10,20 @@ const AddedTask = () => {
         const form = e.target;
         const title = form.title.value;
         const discription = form.discription.value;
+        const date = form.date.value;
+        const priority = form.priority.value;
         // console.log(title, discription);
         e.target.reset();
         const TaskInfo = {
-            title, discription
+            title, discription,priority,date
         }
         axiosPublic.post('/tasks', TaskInfo)
             .then(res => {
-                if (res.data.insertedId) {
-                    console.log('user added to the data base ');
-                    swal.fire({
-                        position: "top-end",
-                        icon: "success",
-                        title: "Your work has been saved",
-                        showConfirmButton: false,
-                        timer: 1500
-                    });
+                if (res.data.acknowledged == true) {
+                    swal("Good job!", "Added Producted Successfull", "success");
+                    console.log('user added to the data base');
+
+                 
                 }
             })
     }
@@ -44,6 +43,25 @@ const AddedTask = () => {
                     <textarea className="textarea textarea-bordered" name="discription" placeholder="Discription"></textarea>
 
                 </div>
+                <div className="form-control ">
+                    <label className="label">
+                        <span className="label-text">DeadLine</span>
+                    </label>
+                    <input type="date" name="date" placeholder="date" className="input input-bordered" />
+                </div>
+                <div className="form-control md:w-1/2">
+                        <label className="label">
+                            <span className="label-text">Priority</span>
+                        </label>
+                        
+                        <select name="priority" className="select select-bordered w-full ">
+                            
+                            <option>Low</option>
+                            <option>Mediom</option>
+                            <option>High</option>
+                             
+                        </select>
+                    </div>
                 <div className="form-control mt-6">
                     <button className="btn btn-primary">Added Task</button>
                 </div>

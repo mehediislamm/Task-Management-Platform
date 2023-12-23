@@ -7,6 +7,8 @@ import Register from "../page/register/Register";
 import Dashboard from "../hook/Dashboard";
 import MyProfile from "../page/myprofile/MyProfile";
 import AddedTask from "../page/AddedTask/AddedTask";
+import TodoList from "../page/TodoList/TodoList";
+import DeleteTask from "../page/DeleteTask/DeleteTask";
 
 
 
@@ -51,6 +53,14 @@ export const router = createBrowserRouter([
         {
             path:'/dashboard/addedtask',
             element:<AddedTask></AddedTask>
+        },
+        {
+            path:'/dashboard/todolist',
+            element:<TodoList></TodoList>
+        },
+        {
+            path:'/dashboard/deletetask',
+            element:<DeleteTask></DeleteTask>
         },
         ]
     }
