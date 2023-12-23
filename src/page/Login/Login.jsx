@@ -10,7 +10,7 @@ import swal from 'sweetalert';
 import loggedImage from '../../assets/login.jpg'
 import { AuthContext } from "../../provider/AuthProvider";
 import app from "../../config/firebase.config";
-import useAxiosPublic from "../../hook/useAxiosPublic";
+
 
 
 
@@ -22,7 +22,7 @@ const Login = () => {
     const { signIn, } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
-    const axiosPublic = useAxiosPublic();
+    
 
     const handleLogin = e => {
         e.preventDefault();
@@ -58,13 +58,13 @@ const Login = () => {
     const handleGoogleSignIn = () => {
         signInWithPopup(auth, provider)
             .then(result => { console.log(result.user) 
-                const userInfo = {
-                    email: result.user?.email,
-                    name: result.user?.displayName,
-                    image: result.user?.photoURL
+                // const userInfo = {
+                //     email: result.user?.email,
+                //     name: result.user?.displayName,
+                //     image: result.user?.photoURL
 
-                }
-                axiosPublic.post('/users', userInfo)
+                // }
+                // axiosPublic.post('/users', userInfo)
                 .then(res =>{
                     console.log(res.data);
                     setSuccess(swal({
