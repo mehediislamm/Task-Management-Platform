@@ -12,7 +12,9 @@ const TodoList = () => {
             })
     }, [])
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5"
+        data-aos="zoom-out-down"
+        >
             <div >
                 <h1 className="text-center mb-5 text-2xl font-bold">Todo List</h1>
                 {
@@ -30,20 +32,20 @@ const TodoList = () => {
                 }
 
             </div>
-           
-                <div className="md:w-44 h-full bg-slate-500 mb-2 mt-14">
-                    <h1 className="text-center text-xl">Ongoing</h1>
-                    <div>
 
-                    </div>
-                </div>
-                <div className="md:w-44 lg:w-full h-full bg-blue-500 mt-14">
-                    <h1 className="text-center text-xl">Complite</h1>
-                    <div>
+            <div className="md:w-44 h-full bg-slate-500 mb-2 mt-14">
+                <h1 className="text-center text-xl">Ongoing</h1>
+                <div>
 
-                    </div>
                 </div>
-             
+            </div>
+            <div className="md:w-44 lg:w-full h-full bg-blue-500 mt-14">
+                <h1 className="text-center text-xl">Complite</h1>
+                <div>
+
+                </div>
+            </div>
+
         </div>
     );
 };

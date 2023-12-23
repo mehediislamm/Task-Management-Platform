@@ -7,7 +7,11 @@ const Developer = () => {
                 <h1 className='text-2xl font-bold mb-3'>Benefits of a web developer portfolio site</h1>
                 <p className='mb-7'>It’s one thing to type out a nice resume, but quite another thing to be able to point to a body of work that speaks for itself. Benefits of using a portfolio website include</p>
             </div>
-            <div>
+            <div
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            >
                 <img className='w-full' src={developer} alt="" />
             </div>
         </div>

@@ -39,7 +39,11 @@ const DeleteTask = () => {
 
                 {
                     todoList.map(todoLists => <div key={todoLists._id}>
-                        <div className=" md:w-44 border bg-red-300 p-3">
+                        <div className=" md:w-44 border bg-red-300 p-3"
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500"
+                        >
 
                             <div className=" rounded-xl bg-red-500 mb-5 text-center pt-5 pb-5 w-full">
                                 <h2 className="mb-1">{todoLists?.title}</h2>

@@ -28,7 +28,9 @@ const AddedTask = () => {
             })
     }
     return (
-        <div className="w-52 md:w-[500px] lg:w-[900px]">
+        <div className="w-52 md:w-[500px] lg:w-[900px]"
+        data-aos="zoom-out"
+        >
             <form onSubmit={MakeTask} className="card-body">
                 <div className="form-control ">
                     <label className="label">

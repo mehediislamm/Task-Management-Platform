@@ -8,7 +8,11 @@ const Professional = () => {
                 <p className='mb-7'>Financial markets are inherited with volatilities and there is no assurance of returns on investments. Notwithstanding expert qualification and immense experience, it is common to find your well thought investment not giving desired result with even principal getting unrealizable.</p>
 
             </div>
-            <div>
+            <div
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            >
                 <img className='w-full' src={professional} alt="" />
             </div>
         </div>

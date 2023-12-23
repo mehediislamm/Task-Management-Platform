@@ -38,17 +38,23 @@ const MyProfile = () => {
 
             </div>
             <div className="mt-20 grid grid-cols-1 md:grid-cols-3">
-                <li className="mb-3">
+                <li className="mb-3"
+                data-aos="zoom-in"
+                >
                     <NavLink className="text-white " to="/dashboard/addedtask">
                         <button className="btn btn-primary"> <PiMegaphoneBold size={20} />Added Task</button>
                     </NavLink>
                 </li>
-                <li className="mb-3">
+                <li className="mb-3"
+                data-aos="zoom-in-down"
+                >
                     <NavLink className="text-white " to="/dashboard/todolist">
                         <button className="btn btn-primary "> <VscRequestChanges size={20} />Todo List</button>
                     </NavLink>
                 </li>
-                <li className="mb-3">
+                <li className="mb-3"
+                data-aos="zoom-in-up"
+                >
                     <NavLink className="text-white " to="/dashboard/deletetask">
                         <button className="btn btn-primary"> <MdDelete size={20} />
                             Delete Task </button>
