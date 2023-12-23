@@ -1,8 +1,6 @@
-// import { useContext } from "react";
-// import { Link, NavLink } from "react-router-dom";
-// import { AuthContext } from "../../../provider/AuthProvider";
-// import userDefoultPic from '../../../assets/user.png'
+
 import MenuDropdown from "./MenuDropdown";
+import logo  from '../../../assets/logoT-removebg-preview.png';
 
 
 const Navber = () => {
@@ -42,8 +40,7 @@ const Navber = () => {
     return (
         <div className="navbar fixed z-10 bg-opacity-30 max-w-screen-xl bg-black text-white">
           <div className="navbar-start">
-    
-            <a className="btn btn-ghost md:text-xl"> Logo </a>
+            <a className="btn btn-ghost md:text-xl flex items-center"> <img className="w-14" src={logo} alt="" /> <p>TaskManagement</p> </a>
           </div>
     
           <div className="navbar-end">

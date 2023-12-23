@@ -28,7 +28,10 @@ const MenuDropdown = () => {
                         <NavLink to={'/'}>Home</NavLink>
                     </button>
                     <button className='disabled:cursor-not-allowed cursor-pointer hover:bg-neutral-100 py-3 px-4 text-sm font-semibold rounded-full  transition'>
-                        <NavLink to={'/apartment'}> Apartment</NavLink>
+                        <NavLink to={'/about'}> About</NavLink>
+                    </button>
+                    <button className='disabled:cursor-not-allowed cursor-pointer hover:bg-neutral-100 py-3 px-4 text-sm font-semibold rounded-full  transition'>
+                        <NavLink to={'/dashboard'}> Dashboard</NavLink>
                     </button>
                     {
                         user ? null :
