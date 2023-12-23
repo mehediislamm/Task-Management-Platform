@@ -78,12 +78,9 @@ const MenuDropdown = () => {
                             <NavLink to={'/'}>Home</NavLink>
                         </button>
 
-                        <button className='md:hidden disabled:cursor-not-allowed cursor-pointer hover:bg-neutral-100 mb-2 font-semibold rounded-full btn-xs transition'>
-                            <NavLink to={'/apartment'}> Apartment</NavLink>
-                        </button>
 
                         {
-                            user ? <Link to="/dashboard/myProfile"><button className="disabled:cursor-not-allowed cursor-pointer hover:bg-neutral-100 font-semibold rounded-full btn-xs transitionml-4 ml-2 md:ml-14 lg:ml-7 mb-2">Dashboard</button></Link> : null
+                            user ? <Link to="/dashboard/myProfile"><button className=" disabled:cursor-not-allowed cursor-pointer hover:bg-neutral-100 font-semibold rounded-full btn-xs transitionml-4 ml-2 md:ml-14 lg:ml-7 mb-2">Dashboard</button></Link> : null
 
 
 

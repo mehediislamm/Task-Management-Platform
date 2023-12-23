@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const TodoList = () => {
     const [todoList, setTodoList] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/tasks`)
+        fetch(`https://task-management-server-ruby.vercel.app/tasks`)
             .then(res => res.json())
             .then(data => {
                 setTodoList(data)

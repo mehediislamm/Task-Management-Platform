@@ -9,6 +9,7 @@ import MyProfile from "../page/myprofile/MyProfile";
 import AddedTask from "../page/AddedTask/AddedTask";
 import TodoList from "../page/TodoList/TodoList";
 import DeleteTask from "../page/DeleteTask/DeleteTask";
+import About from "../page/About/About";
 
 
 
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
         {
             path:'/',
             element:<Home></Home>
+        },
+        {
+            path:'about',
+            element:<About></About>
         },
         {
             path:'login',

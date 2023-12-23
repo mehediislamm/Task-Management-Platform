@@ -6,7 +6,7 @@ import swal from "sweetalert";
 const DeleteTask = () => {
     const [todoList, setTodoList] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/tasks`)
+        fetch(`https://task-management-server-ruby.vercel.app/tasks`)
             .then(res => res.json())
             .then(data => {
                 setTodoList(data)
@@ -16,7 +16,7 @@ const DeleteTask = () => {
     const handleDelete = (_id) => {
 
 
-        fetch(`http://localhost:5000/tasks/${_id}`, {
+        fetch(`https://task-management-server-ruby.vercel.app/tasks/${_id}`, {
             method: "DELETE",
         })
             .then((res) => res.json())
@@ -36,7 +36,7 @@ const DeleteTask = () => {
     return (
         <div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-              
+
                 {
                     todoList.map(todoLists => <div key={todoLists._id}>
                         <div className=" md:w-44 border bg-red-300 p-3">

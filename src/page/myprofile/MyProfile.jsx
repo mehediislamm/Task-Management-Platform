@@ -6,7 +6,7 @@ const MyProfile = () => {
     const [userr, setUser] = useState([]);
     const { user } = useContext(AuthContext);
     useEffect(() => {
-        fetch(`http://localhost:5000/users`)
+        fetch(`https://task-management-server-ruby.vercel.app/users`)
             .then(res => res.json())
             .then(data => {
                 setUser(data)
