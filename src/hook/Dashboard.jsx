@@ -3,7 +3,7 @@ import { CgProfile } from "react-icons/cg";
 import { PiMegaphoneBold } from "react-icons/pi";
 import { FaHome,  } from "react-icons/fa";
 import { VscRequestChanges } from "react-icons/vsc";
-import { RiCoupon3Line } from "react-icons/ri";
+import { MdDelete } from "react-icons/md";
  
  
  
@@ -45,7 +45,7 @@ const Dashboard = () => {
                             </li>
                             <li className="mb-3">
                                 <NavLink className="text-white " to="/dashboard/deletetask">
-                                    <button className="disabled:cursor-not-allowed cursor-pointer hover:bg-black py-3 px-4 text-sm font-semibold rounded-full  transition flex items-center gap-3 w-full ">  <RiCoupon3Line />
+                                    <button className="disabled:cursor-not-allowed cursor-pointer hover:bg-black py-3 px-4 text-sm font-semibold rounded-full  transition flex items-center gap-3 w-full "> <MdDelete size={20} />
                                     Delete Task </button>
                                 </NavLink>
                             </li>
